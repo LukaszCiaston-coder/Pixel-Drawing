@@ -1,39 +1,39 @@
 import { changeColor, drawTile, cleanCanvas, saveImage } from './utils';
 
-var canvas = document.getElementById("canvas");
-var tileSize = 30;
-var numTiles = 450 / tileSize;
+const canvas = document.getElementById("canvas");
+const tileSize = 30;
+const numTiles = 450 / tileSize;
 
-for (var i = 0; i < numTiles * numTiles; i++) {
-  var tile = document.createElement("div");
+for (let i = 0; i < numTiles * numTiles; i++) {
+  const tile = document.createElement("div");
   tile.classList.add("tile");
   tile.addEventListener("click", drawTile);
   canvas.appendChild(tile);
 }
 
-var red = document.getElementById("red");
+const red = document.getElementById("red");
 red.addEventListener("click", () => changeColor('red'));
 
-var blue = document.getElementById("blue");
+const blue = document.getElementById("blue");
 blue.addEventListener("click", () => changeColor('blue'));
 
-var green = document.getElementById("green");
+const green = document.getElementById("green");
 green.addEventListener("click", () => changeColor('green'));
 
-var green = document.getElementById("white");
-green.addEventListener("click", () => changeColor('white'));
+const white = document.getElementById("white");
+white.addEventListener("click", () => changeColor('white'));
 
-var green = document.getElementById("black");
-green.addEventListener("click", () => changeColor('black'));
+const black = document.getElementById("black");
+black.addEventListener("click", () => changeColor('black'));
 
-var green = document.getElementById("yellow");
-green.addEventListener("click", () => changeColor('yellow'));
+const yellow = document.getElementById("yellow");
+yellow.addEventListener("click", () => changeColor('yellow'));
 
-var green = document.getElementById("papayawhip");
-green.addEventListener("click", () => changeColor('rgb(241, 145, 80)'));
+const papayawhip = document.getElementById("papayawhip");
+papayawhip.addEventListener("click", () => changeColor('rgb(241, 145, 80)'));
 
-var cleanBtn = document.getElementById("cleanBtn");
+const cleanBtn = document.getElementById("cleanBtn");
 cleanBtn.addEventListener("click", cleanCanvas);
 
-var saveBtn = document.getElementById("saveBtn");
+const saveBtn = document.getElementById("saveBtn");
 saveBtn.addEventListener("click", saveImage);
