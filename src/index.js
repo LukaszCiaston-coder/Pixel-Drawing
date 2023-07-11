@@ -30,7 +30,7 @@ var green = document.getElementById("yellow");
 green.addEventListener("click", () => changeColor('yellow'));
 
 var green = document.getElementById("papayawhip");
-green.addEventListener("click", () => changeColor('papayawhip'));
+green.addEventListener("click", () => changeColor('rgb(241, 145, 80)'));
 
 var cleanBtn = document.getElementById("cleanBtn");
 cleanBtn.addEventListener("click", cleanCanvas);
